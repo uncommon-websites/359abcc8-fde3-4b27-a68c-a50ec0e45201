@@ -4,7 +4,7 @@
     import FeatureRow from '$lib/components/FeatureRow.svelte';
 </script>
 
-<div class="bg-[var(--color-canopy-dark)] min-h-screen flex flex-col">
+<div class="bg-[var(--color-smartplan-dark)] min-h-screen flex flex-col">
     <Navbar />
 
     <main class="flex-grow">
@@ -14,29 +14,29 @@
                 <div class="max-w-4xl mx-auto text-center">
                     <!-- Search/Notification Pill -->
                     <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-4 py-1.5 mb-8">
-                        <span class="w-2 h-2 rounded-full bg-[var(--color-canopy-lime)]"></span>
-                        <span class="text-white text-sm font-medium">Canopy 2.0</span>
-                        <span class="text-gray-400 text-sm">is here</span>
+                        <span class="w-2 h-2 rounded-full bg-[var(--color-smartplan-primary)]"></span>
+                        <span class="text-white text-sm font-medium">170K+ users</span>
+                        <span class="text-gray-400 text-sm">trust Smartplan</span>
                         <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                     </div>
 
                     <h1 class="text-5xl md:text-7xl font-bold text-white tracking-tight mb-6 text-balance">
-                        Build better B2B lending products.
+                        Transform shift chaos into automated workforce magic.
                     </h1>
                     
                     <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed text-balance">
-                        The most flexible loan management system for commercial lenders. Get everything you need to operate & scale secured lending, installment, and hybrid products. Your secret weapon for everything post-origination.
+                        Stop wasting hours on Excel spreadsheets. Smartplan's intelligent algorithms handle shift scheduling, time tracking, and workforce management—so you can focus on running your business.
                     </p>
                     
                     <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                         <button class="bg-white hover:bg-gray-100 text-black px-6 py-3 rounded-full font-medium transition-colors flex items-center gap-2">
-                            Get started
+                            Start Free Trial
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
                             </svg>
                         </button>
                         <button class="bg-transparent border border-white/20 hover:bg-white/10 text-white px-6 py-3 rounded-full font-medium transition-colors flex items-center gap-2">
-                            Explore Canopy 2.0
+                            Watch Demo
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
                             </svg>
@@ -48,58 +48,80 @@
             <!-- Hero Images/Cards -->
             <div class="mt-20 relative">
                 <div class="flex justify-center gap-6 overflow-hidden px-6">
-                    <!-- Card 1 -->
+                    <!-- Card 1 - Schedule View -->
                     <div class="w-[350px] md:w-[450px] flex-shrink-0 rounded-xl overflow-hidden shadow-2xl border border-white/10 transform -rotate-2 mt-8">
                         <div class="bg-white p-4">
                             <div class="flex items-center justify-between mb-4">
-                                <div class="h-2 w-20 bg-gray-200 rounded"></div>
-                                <div class="h-8 w-24 bg-[var(--color-canopy-lime)]/20 rounded text-[var(--color-canopy-lime)] text-xs flex items-center justify-center font-bold">$1,544.45</div>
+                                <div class="text-xs font-bold text-gray-900">Week 47</div>
+                                <div class="h-8 w-24 bg-teal-100 rounded text-teal-700 text-xs flex items-center justify-center font-bold">15 shifts</div>
                             </div>
-                            <div class="space-y-3">
-                                <div class="h-24 bg-gray-100 rounded-lg w-full"></div>
-                                <div class="h-4 w-full bg-gray-50 rounded"></div>
-                                <div class="h-4 w-2/3 bg-gray-50 rounded"></div>
+                            <div class="space-y-2">
+                                <div class="grid grid-cols-7 gap-1 text-[10px] text-gray-400 font-medium">
+                                    <div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div><div>Sun</div>
+                                </div>
+                                <div class="grid grid-cols-7 gap-1">
+                                    <div class="h-16 bg-blue-100 rounded border border-blue-200"></div>
+                                    <div class="h-16 bg-green-100 rounded border border-green-200"></div>
+                                    <div class="h-16 bg-gray-50 rounded border border-gray-100"></div>
+                                    <div class="h-16 bg-purple-100 rounded border border-purple-200"></div>
+                                    <div class="h-16 bg-blue-100 rounded border border-blue-200"></div>
+                                    <div class="h-16 bg-orange-100 rounded border border-orange-200"></div>
+                                    <div class="h-16 bg-gray-50 rounded border border-gray-100"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Card 2 (Center) -->
+                    <!-- Card 2 (Center) - Employee Card -->
                     <div class="w-[350px] md:w-[450px] flex-shrink-0 rounded-xl overflow-hidden shadow-2xl border border-white/10 z-10">
                         <div class="bg-white h-full flex flex-col">
-                            <div class="bg-[var(--color-canopy-lime)] p-6">
+                            <div class="bg-gradient-to-br from-teal-500 to-cyan-600 p-6">
                                 <div class="flex justify-between items-center">
-                                    <div class="h-6 w-24 bg-black/10 rounded"></div>
-                                    <div class="h-8 w-8 bg-black/10 rounded-full"></div>
+                                    <div class="text-white font-bold">Sarah Jensen</div>
+                                    <div class="h-10 w-10 bg-white/20 rounded-full flex items-center justify-center text-white font-bold text-lg">SJ</div>
                                 </div>
+                                <div class="text-white/80 text-sm mt-1">Barista</div>
                             </div>
-                            <div class="p-6 flex-grow">
-                                <div class="flex gap-4 mb-6">
-                                    <div class="w-1/3 space-y-2">
-                                        <div class="h-2 w-full bg-gray-100 rounded"></div>
-                                        <div class="h-2 w-2/3 bg-gray-100 rounded"></div>
+                            <div class="p-6 flex-grow space-y-4">
+                                <div class="flex justify-between items-center pb-3 border-b border-gray-100">
+                                    <span class="text-sm text-gray-500">This week</span>
+                                    <span class="text-lg font-bold text-gray-900">32.5 hrs</span>
+                                </div>
+                                <div class="space-y-2">
+                                    <div class="flex items-center gap-2 text-sm">
+                                        <div class="w-2 h-2 rounded-full bg-green-500"></div>
+                                        <span class="text-gray-600">Mon 09:00 - 17:00</span>
                                     </div>
-                                    <div class="w-2/3 space-y-2">
-                                        <div class="h-8 w-full bg-gray-50 rounded border border-gray-100"></div>
-                                        <div class="h-2 w-full bg-gray-100 rounded mt-2"></div>
-                                        <div class="h-2 w-full bg-gray-100 rounded"></div>
-                                        <div class="h-2 w-full bg-gray-100 rounded"></div>
+                                    <div class="flex items-center gap-2 text-sm">
+                                        <div class="w-2 h-2 rounded-full bg-green-500"></div>
+                                        <span class="text-gray-600">Wed 09:00 - 17:00</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 text-sm">
+                                        <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+                                        <span class="text-gray-600">Fri 14:00 - 22:00</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Card 3 -->
+                    <!-- Card 3 - Time Tracking -->
                     <div class="w-[350px] md:w-[450px] flex-shrink-0 rounded-xl overflow-hidden shadow-2xl border border-white/10 transform rotate-2 mt-8">
                         <div class="bg-white p-4">
                             <div class="flex items-center justify-between mb-4">
-                                <div class="h-2 w-20 bg-gray-200 rounded"></div>
-                                <div class="h-8 w-24 bg-[var(--color-canopy-lime)]/20 rounded text-[var(--color-canopy-lime)] text-xs flex items-center justify-center font-bold">$1,544.45</div>
+                                <div class="text-xs font-bold text-gray-900">Today</div>
+                                <div class="h-8 w-24 bg-green-100 rounded text-green-700 text-xs flex items-center justify-center font-bold">5 active</div>
                             </div>
-                            <div class="space-y-3">
-                                <div class="h-24 bg-gray-100 rounded-lg w-full"></div>
-                                <div class="h-4 w-full bg-gray-50 rounded"></div>
-                                <div class="h-4 w-2/3 bg-gray-50 rounded"></div>
+                            <div class="space-y-2">
+                                {#each [{name: 'Emma', time: '3h 24m', color: 'green'}, {name: 'Lucas', time: '2h 15m', color: 'blue'}, {name: 'Sofia', time: '4h 02m', color: 'purple'}] as employee}
+                                <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-8 h-8 bg-{employee.color}-200 rounded-full"></div>
+                                        <span class="text-sm font-medium text-gray-900">{employee.name}</span>
+                                    </div>
+                                    <span class="text-sm text-gray-600">{employee.time}</span>
+                                </div>
+                                {/each}
                             </div>
                         </div>
                     </div>
@@ -110,77 +132,85 @@
         <!-- Logos Section -->
         <section class="py-12 border-y border-white/5 bg-black/20">
             <div class="container mx-auto px-6">
+                <p class="text-center text-gray-400 text-sm mb-8">Trusted by retail and hospitality businesses across the Nordics</p>
                 <div class="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-50 grayscale">
-                    <!-- Novo -->
+                    <!-- Cafe Brand -->
                     <svg class="h-6 md:h-8 w-auto text-white" viewBox="0 0 100 30" fill="currentColor">
-                        <path d="M10,5 L15,5 L15,25 L10,25 L10,5 Z M25,5 L40,5 L40,10 L30,10 L30,20 L40,20 L40,25 L25,25 L25,5 Z M50,5 L55,5 L60,25 L55,25 L52.5,15 L50,25 L45,25 L50,5 Z M70,5 L85,5 L85,25 L70,25 L70,20 L80,20 L80,10 L70,10 L70,5 Z" />
+                        <circle cx="15" cy="15" r="8" />
+                        <path d="M30,8 L50,8 L50,22 L30,22 Z M35,12 L45,12 L45,18 L35,18 Z" />
                     </svg>
-                    <!-- Mercury -->
+                    <!-- Restaurant -->
                     <svg class="h-6 md:h-8 w-auto text-white" viewBox="0 0 100 30" fill="currentColor">
-                         <circle cx="15" cy="15" r="10" />
-                         <rect x="35" y="5" width="50" height="20" />
+                        <path d="M15,5 L15,25 M10,5 L10,15 M20,5 L20,15 M40,5 L40,25 M35,5 L45,15 M45,5 L35,15" />
                     </svg>
-                    <!-- Bluevine -->
+                    <!-- Retail Store -->
                     <svg class="h-6 md:h-8 w-auto text-white" viewBox="0 0 100 30" fill="currentColor">
-                        <rect x="10" y="10" width="20" height="10" />
-                        <rect x="40" y="5" width="50" height="20" />
+                        <rect x="10" y="10" width="30" height="15" />
+                        <path d="M10,10 L25,5 L40,10" />
                     </svg>
-                    <!-- Flexport -->
+                    <!-- Hotel -->
                     <svg class="h-6 md:h-8 w-auto text-white" viewBox="0 0 100 30" fill="currentColor">
-                        <path d="M10,5 L30,5 L30,10 L15,10 L15,12.5 L25,12.5 L25,17.5 L15,17.5 L15,25 L10,25 L10,5 Z" />
-                         <rect x="40" y="5" width="50" height="20" />
+                        <rect x="10" y="8" width="25" height="17" />
+                        <rect x="15" y="12" width="4" height="4" />
+                        <rect x="22" y="12" width="4" height="4" />
+                        <rect x="15" y="18" width="4" height="4" />
+                        <rect x="22" y="18" width="4" height="4" />
                     </svg>
-                    <!-- Prime -->
+                    <!-- Bar/Pub -->
                     <svg class="h-6 md:h-8 w-auto text-white" viewBox="0 0 100 30" fill="currentColor">
-                        <rect x="10" y="5" width="80" height="20" />
+                        <path d="M15,8 L15,25 M12,8 L18,8 M10,12 L20,12 M12,16 L18,16" />
+                        <circle cx="15" cy="20" r="3" />
                     </svg>
                 </div>
             </div>
         </section>
 
-        <!-- Canopy Core Section -->
+        <!-- Smartplan Core Section -->
         <section class="py-32 relative overflow-hidden">
             <div class="container mx-auto px-6 relative z-10">
                 <div class="text-center mb-24">
-                    <h2 class="text-[var(--color-canopy-lime)] font-mono text-xs tracking-[0.2em] uppercase mb-6">Canopy Core</h2>
-                    <h3 class="text-4xl md:text-6xl font-bold text-white mb-2 tracking-tight">A loan management system.</h3>
-                    <h3 class="text-4xl md:text-6xl font-bold text-gray-600 tracking-tight">And so much more.</h3>
+                    <h2 class="text-[var(--color-smartplan-primary)] font-mono text-xs tracking-[0.2em] uppercase mb-6">Smartplan Platform</h2>
+                    <h3 class="text-4xl md:text-6xl font-bold text-white mb-2 tracking-tight">Intelligent workforce management.</h3>
+                    <h3 class="text-4xl md:text-6xl font-bold text-gray-600 tracking-tight">Effortlessly automated.</h3>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
-                    <!-- Purple Card -->
-                    <div class="bg-gradient-to-br from-[#7C3AED] to-[#4C1D95] rounded-3xl p-12 aspect-[4/3] relative overflow-hidden flex items-center justify-center shadow-2xl">
+                    <!-- Teal Card -->
+                    <div class="bg-gradient-to-br from-teal-600 to-cyan-700 rounded-3xl p-12 aspect-[4/3] relative overflow-hidden flex items-center justify-center shadow-2xl">
                         <!-- Abstract UI Elements -->
                         <div class="relative z-10 w-full max-w-[320px]">
-                            <!-- Credit Card -->
+                            <!-- Schedule Card -->
                             <div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-6 mb-8 shadow-xl relative overflow-hidden group hover:scale-105 transition-transform duration-500">
-                                <div class="absolute top-0 right-0 p-6 opacity-50">
-                                    <svg class="w-12 h-8 text-white" viewBox="0 0 48 32" fill="currentColor">
-                                        <path d="M32 0H16C7.163 0 0 7.163 0 16s7.163 16 16 16h16c8.837 0 16-7.163 16-16S40.837 0 32 0z" fill-opacity="0.5"/>
-                                        <circle cx="16" cy="16" r="16" fill-opacity="0.5"/>
-                                    </svg>
+                                <div class="text-white/80 text-xs uppercase tracking-wider font-medium mb-4">Weekly Schedule</div>
+                                <div class="grid grid-cols-7 gap-1 mb-4">
+                                    {#each ['M', 'T', 'W', 'T', 'F', 'S', 'S'] as day}
+                                    <div class="text-white/60 text-[10px] text-center font-medium">{day}</div>
+                                    {/each}
                                 </div>
-                                <div class="w-12 h-8 bg-[#D4AF37] rounded-md mb-8 relative z-10"></div>
-                                <div class="space-y-1 relative z-10">
-                                    <div class="text-white/60 text-[10px] uppercase tracking-wider font-medium">Card Holder</div>
-                                    <div class="text-white font-mono text-lg tracking-widest">ARLENE MCCOY</div>
+                                <div class="grid grid-cols-7 gap-1">
+                                    {#each [1,2,3,4,5,6,7] as i}
+                                    <div class="h-8 bg-white/20 rounded"></div>
+                                    {/each}
                                 </div>
-                                <div class="absolute bottom-6 right-6 text-white font-bold italic text-2xl">VISA</div>
+                                <div class="mt-4 flex items-center justify-between">
+                                    <span class="text-white/60 text-xs">Total Hours</span>
+                                    <span class="text-white font-bold text-lg">156.5</span>
+                                </div>
                             </div>
                             
                             <!-- Floating Pills -->
                             <div class="relative">
                                 <div class="absolute -left-4 top-0 bg-white text-black px-5 py-2.5 rounded-full text-sm font-semibold shadow-lg flex items-center gap-2 transform -rotate-2">
-                                    <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
-                                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"/></svg>
+                                    <div class="w-5 h-5 rounded-full bg-teal-100 flex items-center justify-center text-teal-600">
+                                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"/></svg>
                                     </div>
-                                    Installment loans
+                                    Auto-scheduling
                                 </div>
                                 <div class="absolute -right-4 top-12 bg-white/10 backdrop-blur-md text-white px-5 py-2.5 rounded-full text-sm font-semibold border border-white/20 flex items-center gap-2 transform rotate-2">
-                                    <div class="w-5 h-5 rounded-full bg-purple-500/30 flex items-center justify-center text-purple-200">
-                                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/></svg>
+                                    <div class="w-5 h-5 rounded-full bg-cyan-500/30 flex items-center justify-center text-cyan-200">
+                                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/></svg>
                                     </div>
-                                    Working capital
+                                    Time tracking
                                 </div>
                             </div>
                         </div>
@@ -188,9 +218,9 @@
 
                     <!-- Text Content -->
                     <div class="space-y-8">
-                        <h3 class="text-4xl md:text-5xl font-bold text-white tracking-tight">Scale with flexibility.</h3>
+                        <h3 class="text-4xl md:text-5xl font-bold text-white tracking-tight">From chaos to clarity in minutes.</h3>
                         <p class="text-gray-400 text-lg leading-relaxed max-w-lg">
-                            Things change. Markets and borrower needs evolve. Canopy provides modern lending built to adapt and grow with you and your customers.
+                            Stop juggling spreadsheets and manual processes. Smartplan's intelligent algorithms automatically optimize schedules based on availability, skills, and business needs—saving you hours every week.
                         </p>
                     </div>
                 </div>
@@ -204,13 +234,13 @@
                 <div class="max-w-4xl mb-24">
                     <div class="flex items-center gap-4 mb-6">
                         <div class="h-px w-12 bg-gray-300"></div>
-                        <span class="text-gray-500 font-mono text-xs tracking-[0.2em] uppercase">CanopyOS</span>
+                        <span class="text-gray-500 font-mono text-xs tracking-[0.2em] uppercase">Complete Platform</span>
                     </div>
-                    <h2 class="text-4xl md:text-6xl font-bold text-gray-900 mb-2 tracking-tight">One home for operating and scaling lending products.</h2>
-                    <h2 class="text-4xl md:text-6xl font-bold text-gray-400 tracking-tight mb-8">However complex.</h2>
+                    <h2 class="text-4xl md:text-6xl font-bold text-gray-900 mb-2 tracking-tight">Everything you need to manage your workforce.</h2>
+                    <h2 class="text-4xl md:text-6xl font-bold text-gray-400 tracking-tight mb-8">All in one place.</h2>
                     
                     <a href="#" class="inline-flex items-center gap-2 text-sm font-semibold border-b border-black pb-0.5 hover:text-gray-600 transition-colors">
-                        Explore our platform
+                        Explore all features
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
@@ -223,69 +253,69 @@
                     <div class="hidden lg:block w-64 flex-shrink-0">
                         <div class="sticky top-32 space-y-4">
                             <div class="flex items-center gap-2 text-sm font-semibold text-black border-l-2 border-black pl-4 py-1">
-                                <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-canopy-lime)]"></span>
-                                Collateral Management
+                                <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-smartplan-primary)]"></span>
+                                Smart Scheduling
                             </div>
-                            <a href="#" class="block text-sm text-gray-500 pl-4 py-1 hover:text-black border-l-2 border-transparent hover:border-gray-200 transition-colors">Canopy Connect</a>
-                            <a href="#" class="block text-sm text-gray-500 pl-4 py-1 hover:text-black border-l-2 border-transparent hover:border-gray-200 transition-colors">DataDirect</a>
-                            <a href="#" class="block text-sm text-gray-500 pl-4 py-1 hover:text-black border-l-2 border-transparent hover:border-gray-200 transition-colors">LoanLab</a>
-                            <a href="#" class="block text-sm text-gray-500 pl-4 py-1 hover:text-black border-l-2 border-transparent hover:border-gray-200 transition-colors">Preview</a>
-                            <a href="#" class="block text-sm text-gray-500 pl-4 py-1 hover:text-black border-l-2 border-transparent hover:border-gray-200 transition-colors">SafeGuard</a>
+                            <a href="#" class="block text-sm text-gray-500 pl-4 py-1 hover:text-black border-l-2 border-transparent hover:border-gray-200 transition-colors">Time Tracking</a>
+                            <a href="#" class="block text-sm text-gray-500 pl-4 py-1 hover:text-black border-l-2 border-transparent hover:border-gray-200 transition-colors">Team Communication</a>
+                            <a href="#" class="block text-sm text-gray-500 pl-4 py-1 hover:text-black border-l-2 border-transparent hover:border-gray-200 transition-colors">Analytics & Reports</a>
+                            <a href="#" class="block text-sm text-gray-500 pl-4 py-1 hover:text-black border-l-2 border-transparent hover:border-gray-200 transition-colors">Mobile App</a>
+                            <a href="#" class="block text-sm text-gray-500 pl-4 py-1 hover:text-black border-l-2 border-transparent hover:border-gray-200 transition-colors">Payroll Integration</a>
                         </div>
                     </div>
 
                     <!-- Feature Cards -->
                     <div class="flex-grow space-y-8">
                         <FeatureRow 
-                            title="Collateral Management" 
-                            description="Unify your loan tape with collateral. Canopy is the only LMS that seamlessly integrates loan tapes with collateral, streamlining secured lending processes."
-                            icon="lock"
-                            image="collateral"
+                            title="Smart Scheduling" 
+                            description="Create perfect schedules in seconds. Our intelligent algorithms consider employee availability, skills, labor costs, and business needs to generate optimal shift plans automatically."
+                            icon="schedule"
+                            image="schedule"
                         />
                          <FeatureRow 
-                            title="Canopy Connect" 
-                            description="Drop manual work. Canopy Connect lets you design custom workflows that automate loan tasks, so you can spend your time on other things."
-                            icon="connect"
-                            image="connect"
+                            title="Time Tracking" 
+                            description="Accurate time tracking made simple. Employees clock in/out from their phones, and all hours are automatically synced with schedules for seamless payroll processing."
+                            icon="clock"
+                            image="clock"
                         />
                          <FeatureRow 
-                            title="DataDirect" 
-                            description="Present the insights that matter. Generate ready-made reports that steer your upsell or cross-sell strategy. DataDirect makes your loan account insights count."
-                            icon="data"
-                            image="data"
+                            title="Team Communication" 
+                            description="Keep everyone in sync. Send shift updates, announcements, and messages directly through the app. No more group texts or missed communications."
+                            icon="chat"
+                            image="chat"
                         />
                          <FeatureRow 
-                            title="LoanLab" 
-                            description="Innovate, simulate, operate. Simulate the entire lifecycle of a loan, test different policies and actions, and observe the effects over time (and in real time)."
-                            icon="lab"
-                            image="lab"
+                            title="Analytics & Reports" 
+                            description="Make data-driven decisions. Track labor costs, overtime, attendance patterns, and productivity metrics with real-time dashboards and automated reports."
+                            icon="chart"
+                            image="chart"
                         />
                          <FeatureRow 
-                            title="Preview" 
-                            description="Get ahead of borrowing decisions. Preview an account before committing major changes to production, creating more transparency and better decision-making."
-                            icon="preview"
-                            image="preview"
+                            title="Mobile App" 
+                            description="Manage your team on the go. Both managers and employees get full-featured mobile apps for iOS and Android, making workforce management truly mobile."
+                            icon="mobile"
+                            image="mobile"
                         />
                          <FeatureRow 
-                            title="SafeGuard" 
-                            description="Get accurate calculations. Align all calculations with the business lending scenarios and edge cases that matter via always-on SafeGuard tests."
-                            icon="guard"
-                            image="guard"
+                            title="Payroll Integration" 
+                            description="Seamless payroll processing. Export timesheets directly to your payroll system or use our integrations with popular Nordic payroll providers."
+                            icon="payroll"
+                            image="payroll"
                         />
                     </div>
                 </div>
 
-                <!-- Embed Section -->
+                <!-- Industry Focus Section -->
                 <div class="mt-32 text-center max-w-4xl mx-auto mb-24">
-                    <div class="w-24 h-24 mx-auto bg-gradient-to-br from-blue-100 to-purple-100 rounded-full flex items-center justify-center mb-8 relative">
+                    <div class="w-24 h-24 mx-auto bg-gradient-to-br from-teal-100 to-cyan-100 rounded-full flex items-center justify-center mb-8 relative">
                         <div class="absolute inset-0 bg-white/50 blur-xl rounded-full"></div>
-                        <svg class="w-10 h-10 text-blue-600 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                        <svg class="w-10 h-10 text-teal-600 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                     </div>
                     <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight">
-                        Embed modern lending and credit products — whether you're a fintech, digital bank, or vertical SaaS company.
+                        Built for retail and hospitality businesses across the Nordics.
                     </h2>
                     <button class="bg-white border border-gray-200 hover:border-gray-400 text-black px-6 py-3 rounded-full font-medium transition-colors flex items-center gap-2 mx-auto">
-                        Explore use cases
+                        See customer stories
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
@@ -294,29 +324,29 @@
 
                 <!-- Trusted By Section -->
                 <div class="mb-32">
-                    <p class="text-xl text-gray-500 mb-12">Trusted by modern lending teams. Learn more from our customers.</p>
+                    <p class="text-xl text-gray-500 mb-12">Trusted by retail and hospitality businesses. See how they save time with Smartplan.</p>
                     
                     <div class="grid md:grid-cols-3 gap-6">
-                        <!-- Flexport Card (Large) -->
+                        <!-- Main Customer Card -->
                         <div class="md:col-span-2 bg-[#0A0A0A] rounded-3xl p-10 relative overflow-hidden group min-h-[400px] flex flex-col justify-end">
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
                             
                             <div class="relative z-10">
                                 <div class="flex items-center gap-4 mb-6">
-                                    <div class="text-white font-bold text-2xl tracking-tight">flexport.</div>
-                                    <div class="w-8 h-8 rounded-full bg-[var(--color-canopy-lime)] flex items-center justify-center text-black font-bold">+</div>
+                                    <div class="text-white font-bold text-2xl tracking-tight">Café Nordic</div>
+                                    <div class="w-8 h-8 rounded-full bg-[var(--color-smartplan-primary)] flex items-center justify-center text-black font-bold">+</div>
                                     <div class="flex items-center gap-2 text-white font-semibold text-xl tracking-tight">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M2 17L12 22L22 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M2 12L12 17L22 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <rect x="3" y="3" width="7" height="7" rx="1" stroke="white" stroke-width="2"/>
+                                            <rect x="14" y="3" width="7" height="7" rx="1" stroke="white" stroke-width="2"/>
+                                            <rect x="3" y="14" width="7" height="7" rx="1" stroke="white" stroke-width="2"/>
+                                            <rect x="14" y="14" width="7" height="7" rx="1" stroke="white" stroke-width="2"/>
                                         </svg>
-                                        Canopy
+                                        Smartplan
                                     </div>
                                 </div>
                                 <h3 class="text-3xl font-bold text-white mb-4 max-w-md">
-                                    <span class="text-[#F5A623]">flexport.</span><br>
-                                    How Flexport leveraged Canopy to scale its lending program
+                                    How Café Nordic cut scheduling time from 5 hours to 15 minutes per week
                                 </h3>
                                 <div class="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-black transition-colors">
                                     <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
@@ -327,21 +357,29 @@
                         <!-- Smaller Cards -->
                         <div class="space-y-6">
                             <!-- Card 2 -->
-                            <div class="bg-[#0A0A0A] rounded-3xl p-8 relative overflow-hidden group h-[240px] flex flex-col justify-end">
-                                <div class="absolute inset-0 bg-gradient-to-br from-blue-900/40 to-black"></div>
-                                <div class="relative z-10 flex justify-between items-end">
-                                    <div class="w-12 h-12 rounded-full bg-yellow-400/20 blur-xl absolute -left-2 -bottom-2"></div>
-                                    <div class="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-black transition-colors ml-auto">
+                            <div class="bg-[#0A0A0A] rounded-3xl p-8 relative overflow-hidden group h-[240px] flex flex-col justify-between">
+                                <div class="absolute inset-0 bg-gradient-to-br from-teal-900/40 to-black"></div>
+                                <div class="relative z-10">
+                                    <div class="text-white font-bold text-lg mb-2">Retail Chain</div>
+                                    <p class="text-gray-400 text-sm">15 stores, 200+ employees</p>
+                                </div>
+                                <div class="relative z-10 flex justify-end">
+                                    <div class="w-12 h-12 rounded-full bg-teal-400/20 blur-xl absolute -left-2 -bottom-2"></div>
+                                    <div class="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-black transition-colors">
                                         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                                     </div>
                                 </div>
                             </div>
                             <!-- Card 3 -->
-                            <div class="bg-[#0A0A0A] rounded-3xl p-8 relative overflow-hidden group h-[240px] flex flex-col justify-end">
-                                <div class="absolute inset-0 bg-gradient-to-br from-green-900/40 to-black"></div>
-                                <div class="relative z-10 flex justify-between items-end">
-                                    <div class="w-12 h-12 rounded-full bg-green-400/20 blur-xl absolute -left-2 -bottom-2"></div>
-                                    <div class="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-black transition-colors ml-auto">
+                            <div class="bg-[#0A0A0A] rounded-3xl p-8 relative overflow-hidden group h-[240px] flex flex-col justify-between">
+                                <div class="absolute inset-0 bg-gradient-to-br from-cyan-900/40 to-black"></div>
+                                <div class="relative z-10">
+                                    <div class="text-white font-bold text-lg mb-2">Hotel Group</div>
+                                    <p class="text-gray-400 text-sm">3 locations, 80+ staff</p>
+                                </div>
+                                <div class="relative z-10 flex justify-end">
+                                    <div class="w-12 h-12 rounded-full bg-cyan-400/20 blur-xl absolute -left-2 -bottom-2"></div>
+                                    <div class="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-black transition-colors">
                                         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                                     </div>
                                 </div>
